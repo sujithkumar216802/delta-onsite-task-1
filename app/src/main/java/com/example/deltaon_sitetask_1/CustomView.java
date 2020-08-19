@@ -79,34 +79,34 @@ public class CustomView extends View {
             case MotionEvent.ACTION_DOWN: {
 
                 //left top
-                if (Math.abs(event.getX() - left) < 25 && Math.abs(event.getY() - top) < 25)
+                if (Math.abs(event.getX() - left) < 40 && Math.abs(event.getY() - top) < 40)
                     dragmode = 1;
 
                     //left bottom
-                else if (Math.abs(event.getX() - left) < 25 && Math.abs(event.getY() - bottom) < 25)
+                else if (Math.abs(event.getX() - left) < 40 && Math.abs(event.getY() - bottom) < 40)
                     dragmode = 2;
 
                     //right bottom
-                else if (Math.abs(event.getX() - right) < 25 && Math.abs(event.getY() - bottom) < 25)
+                else if (Math.abs(event.getX() - right) < 40 && Math.abs(event.getY() - bottom) < 40)
                     dragmode = 3;
 
                     //right top
-                else if (Math.abs(event.getX() - right) < 25 && Math.abs(event.getY() - top) < 25)
+                else if (Math.abs(event.getX() - right) < 40 && Math.abs(event.getY() - top) < 40)
                     dragmode = 4;
 
                     //left
-                else if (Math.abs(event.getX() - left) < 25 && ((event.getY() > bottom && event.getY() < top) || (event.getY() < bottom && event.getY() > top)))
+                else if (Math.abs(event.getX() - left) < 40 && ((event.getY() > bottom && event.getY() < top) || (event.getY() < bottom && event.getY() > top)))
                     dragmode = 6;
 
                     //top
-                else if (Math.abs(event.getY() - top) < 25 && ((event.getX() > left && event.getX() < right) || (event.getX() < left && event.getX() > right)))
+                else if (Math.abs(event.getY() - top) < 40 && ((event.getX() > left && event.getX() < right) || (event.getX() < left && event.getX() > right)))
                     dragmode = 7;
                     //right
-                else if (Math.abs(event.getX() - right) < 25 && ((event.getY() > bottom && event.getY() < top) || (event.getY() < bottom && event.getY() > top)))
+                else if (Math.abs(event.getX() - right) < 40 && ((event.getY() > bottom && event.getY() < top) || (event.getY() < bottom && event.getY() > top)))
                     dragmode = 8;
 
                     //bottom
-                else if (Math.abs(event.getY() - bottom) < 25 && ((event.getX() > left && event.getX() < right) || (event.getX() < left && event.getX() > right)))
+                else if (Math.abs(event.getY() - bottom) < 40 && ((event.getX() > left && event.getX() < right) || (event.getX() < left && event.getX() > right)))
                     dragmode = 9;
 
 
